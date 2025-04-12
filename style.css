@@ -1,4 +1,4 @@
-.grid-container {
+ /* .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 230px);
   gap: 10px;
@@ -22,8 +22,8 @@
 
 h1{
     font-size: 25px;
-}
-/* 
+} 
+
 p{
     background-color: blue;
     display: inline-block;
@@ -31,9 +31,9 @@ p{
 span{
     background-color: yellow;
     display: block;
-} */
+} 
 
-.signup{
+.signUp{
 
 }
 .google{
@@ -44,14 +44,14 @@ span{
     display: grid;
     grid-template-columns: repeat(2, 300px);
   }
-}
+} 
 
 
 
-/* @media screen and (min-width: 680px) and (max-width: 900px) {} */
+@media screen and (min-width: 680px) and (max-width: 900px) {} 
 
 
-@media screen and (max-width: 680px) {
+ @media screen and (max-width: 680px) {
     .grid-container {
       display: grid;
       grid-template-columns: repeat(2, 200px);
@@ -67,4 +67,76 @@ span{
     h1{
         font-size: 16px;
     }
+  } 
+
+  .box-container{
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    position: relative; 
   }
+
+  /* .box1{ 
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+  }
+
+  .box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  } 
+
+  .box3{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: absolute;
+  }
+
+  .box3-h4{
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 50px;
+  }
+
+*/
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: var(--main-brand-color);
+    background-color: green;
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    margin: 0 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+
