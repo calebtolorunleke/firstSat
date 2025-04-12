@@ -104,7 +104,7 @@ span{
 
 */
 
-
+/* 
   *{
     margin: 0;
     padding: 0;
@@ -137,6 +137,59 @@ nav a{
     text-decoration: none;
     color: white;
     font-size: 15px;
+} */
+
+:root{
+    --main-brrand-color: green;
+    --font-size-small: 20px;
+    --text-color: white;
+    --secondary-color: yellow;
 }
 
+header, footer{
+    padding-block: 2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #0f4b60 0%, #0f4b60 100%);
+}
 
+main, .page-width{
+    max-width: 900px;
+    padding-inline: 3rem;
+    margin-inline: auto;
+}
+
+main{
+    padding-block: 2rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: start;
+    gap: 2rem;
+    overflow: visible;
+}
+
+aside{
+    position: sticky;
+    background-color: lightblue;
+    top: 2rem;
+}
+
+.widget{
+    min-height: 250px;
+    border-radius: 8px;
+}
+
+.widget:not(:last-child){
+    margin-block-end: 1rem;
+}
+
+.widget.golden{
+    background-color: yellow;
+}
+
+.widget.blue{
+    background-color: blue;
+}
+
+h1{
+
+}
